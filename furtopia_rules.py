@@ -25,7 +25,7 @@ async def write_rules(ctx,ruleSet):
         embed.add_field(name="__**7.  Authorities.**__ If illegal activities have been reported then it will be acted upon and sent to the proper authorities immediately and I, Alison Blue as will my moderators, will side with the law.", value="** **", inline=False)
         embed.add_field(name="__**8. Discord.**__ When agreeing to abide by these rules you also agree to abide by the Discord official EULA and Terms of Service. You can view the TOS here: https://discord.com/terms.", value="** **", inline=False)
         embed.add_field(name="__**9. Age.**__ You must be 13 years of age to be in the server, however frequently 15 and below will be denied entry to the full server, and 18 and below are restricted from NSFW content.", value="** **", inline=False)
-        embed.add_field(name="__**10. Violations.**__ If anyone violates rules they get demoted, if you are only a visitor you will be banned", value="** **", inline=False)
+        embed.add_field(name="__**10. Violations.**__ If anyone violates rules they get demoted, if you are only a visitor you will be banned.", value="** **", inline=False)
         embed.set_footer(text="If you have further questions refer to the staff/admins/directors, in that order.\nBy continuing using the server you are accepting these rules.")
         await ctx.send(embed=embed)
     await ctx.message.delete()
