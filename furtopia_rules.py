@@ -28,7 +28,13 @@ async def write_rules(ctx,ruleSet):
         embed.add_field(name="__**10. Violations.**__ If anyone violates rules they get demoted, if you are only a visitor you will be banned.", value="** **", inline=False)
         embed.set_footer(text="If you have further questions refer to the staff/admins/directors, in that order.\nBy continuing using the server you are accepting these rules.")
         await ctx.send(embed=embed)
-    await ctx.message.delete()
+    if ruleSet == "roles":
+        embed=discord.Embed(title="Go to the below link to get your roles", color=0xcf5065)
+        embed.set_author(name="ROLES")
+        embed.add_field(name="https://roleypoly.com/s/988546970064945192", value="** **", inline=False)
+        embed.set_footer(text="If you have further questions refer to the staff/admins/directors, in that order.")
+        await ctx.send(embed=embed)
+    await ctx.message.delete()    
 
 
 @bot.command(name='getImage', aliases=['gi'], help='r.getImage/r.gi  gets server image')
